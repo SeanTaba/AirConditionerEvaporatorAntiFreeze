@@ -63,14 +63,14 @@ void loop() {
         data2[i] = ds2.read();
     }
 
-    int intTemperature1 = (data[1] << 8u) + data[0];
+    int16_t intTemperature1 = (data[1] << 8u) + data[0];
     double temperature1 = intTemperature1 / 16.0;
     Serial1.print(millis());
     Serial1.print(",");
     Serial1.print(temperature1);
     Serial1.print(",");
 
-    int intTemperature2 = (data2[1] << 8u) + data2[0];
+    int16_t intTemperature2 = (data2[1] << 8u) + data2[0];
     double temperature2 = intTemperature2 / 16.0;
     Serial1.println(temperature2);
 
