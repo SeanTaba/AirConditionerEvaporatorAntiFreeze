@@ -74,7 +74,7 @@ void loop() {
     double temperature2 = intTemperature2 / 16.0;
     Serial1.println(temperature2);
 
-    if (temperature1 <= 0 | temperature2 <= 0)
+    if (temperature1 <= -1 | temperature2 <= -1)
     {
         digitalWrite(13,LOW);
     } else if (temperature1 >= 5 & temperature2 >= 5)
