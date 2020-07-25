@@ -11,6 +11,8 @@ void setup() {
     pinMode(3,INPUT_PULLUP);
     pinMode(13,OUTPUT);
     digitalWrite(13,HIGH);
+    Serial1.println("We are back!");
+    Serial1.println("*******************");
 }
 
 void loop() {
